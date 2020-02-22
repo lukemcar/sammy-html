@@ -1,0 +1,91 @@
+/* https://stuffandnonsense.co.uk/archives/css_specificity_wars.html */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+    background-color: #777777;
+    margin:0px;
+    padding:0px;
+}
+
+nav#main-menu {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+    background-color: #aaaaaa;
+    text-align: center;
+
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+nav#main-menu a {
+    display:inline-block;
+    padding:12px 27px;
+    margin:0;
+    border: 1px #bfbfbf solid;
+    color: #ffffff;
+    background-color: #aaaaaa;
+    text-decoration: none; /* no underline */
+    
+    
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav#main-menu a:hover {
+    border: 1px #afafaf solid;
+    color: #efefef;
+    background-color: #9a9a9a;
+}
+
+div#main-content {
+    margin-top: 80px;
+}
+
+div#main-content article {
+    width: 900px;
+    min-height: 600px;
+    background-color: #bfbfbf;
+    margin: auto;
+    padding:2px 15px;
+    border-radius: 10px;
+}
+
+div#main-content article h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: #555555;
+    padding: 0 0 2px 0;
+    border: 2px #555555 solid;
+    border-width: 0 0 2px 0;
+}
+
+div#main-content article p {
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    color: #5f5f5f;
+}
+
+div#main-content article blockquote {
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    color: #5f5f5f;
+    font-style: italic;
+}
+
+div#page-footer footer {
+    margin: 100px 0 0 0;
+    min-height: 200px;
+    padding: 10px;
+    background-color: #555555;
+    text-align: center;
+}
+
+
+div#page-footer footer small {
+    color: #aaaaaa;
+}

@@ -1,0 +1,99 @@
+// out: ../style/style.css, compress: false, sourceMap: false
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@background-color: #777777;
+
+body {
+    background-color: @background-color;
+    margin:0px;
+    padding:0px;
+}
+
+nav#main-menu {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+    background-color: lighten(@background-color, 20%);
+    text-align: center;
+
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    
+    a {
+        display:inline-block;
+        padding:12px 27px;
+        margin:0;
+        border: 1px lighten(@background-color, 30%) solid;
+        color: lighten(@background-color, 50%);
+        background-color: lighten(@background-color, 20%);
+        text-decoration: none; /* no underline */
+        
+        
+        font-family: "Roboto Slab", serif;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    a:hover {
+        border: 1px lighten(@background-color, 20%) solid;
+        color: lighten(@background-color, 45%);
+        background-color: lighten(@background-color, 15%);
+    }
+}
+
+div#main-content {
+    margin-top: 80px;
+    
+    article {
+        width: 900px;
+        min-height: 600px;
+        background-color: lighten(@background-color, 35%);
+        margin: auto;
+        padding:2px 15px;
+        border-radius: 10px;
+
+        h1 {
+            font-family: "Roboto Slab", serif;
+            font-size: 24px;
+            color: darken(@background-color, 20%);
+            padding: 0 0 2px 0;
+            border: 2px darken(@background-color, 20%) solid;
+            border-width: 0 0 2px 0;
+        }
+
+        p {
+            font-family: "Roboto Slab", serif;
+            font-size: 18px;
+            color: darken(@background-color, 15%);
+        }
+
+        blockquote {
+            font-family: "Roboto Slab", serif;
+            font-size: 18px;
+            color: darken(@background-color, 15%);
+            font-style: italic;
+        }
+
+        img {
+            float: right;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+div#page-footer {
+    footer {
+        margin: 100px 0 0 0;
+        min-height: 200px;
+        padding: 10px;
+        background-color: darken(@background-color, 15%);
+        text-align: center;
+
+        small {
+            color: lighten(@background-color, 30%);
+        }
+    }
+}
