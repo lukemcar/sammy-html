@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  simple-http-content:
+    container_name: simple-http-content
+    hostname: simple-http-content
+    image: nginx:alpine
+    tty: true
+    ports:
+      - 80:80/tcp
+    volumes:
+      - /home/luke/workspaces/profile-static-html/html:/usr/share/nginx/html
